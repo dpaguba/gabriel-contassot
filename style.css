@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --primary-color: #ffffff;
+    --font-size-base: 18px;
+    --font-size-small: 12px;
+    --background-color: #000;
+    --font-weight-base: 300;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-base);
+    font-style: normal;
+}
+
+.fixed {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    /* transform: scale(1.1); */
+}
+
+.data {
+    width: 15em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.data-line {
+    display: flex;
+    justify-content: space-between;
+    /* letter-spacing: 0.1em; */
+}
+
+.data-line h1 {
+    font-weight: var(--font-weight-base);
+}
+
+.data-line[data-text-scramble] {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+.data-line[data-text-scramble] li {
+    position: relative;
+}
+
+.data-line[data-text-scramble] a {
+    text-decoration: none;
+    color: var(--primary-color);
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.data-line[data-text-scramble] a:hover {
+    color: var(--primary-color);
+}
+
+.data-line:last-child {
+    margin-top: 2em;
+}
+
+.data-text {
+    font-size: var(--font-size-base);
+    opacity: 1;
+}
+
+.data-symbol {
+    transform: translateY(2px);
+}

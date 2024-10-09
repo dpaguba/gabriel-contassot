@@ -30,16 +30,15 @@ class TextScramble {
 
             if (iteration >= text.length) {
                 clearInterval(link.intervalId);
-                link.textContent = text;  // Reveal the original text at the end
+                link.textContent = text;
             }
 
-            iteration += 1 / 6;
-        }, 50);
+            iteration += 1 / 3;
+        }, 40);
     }
 
     stopScramble(link) {
         clearInterval(link.intervalId);
-        // Restore the original text immediately
         link.textContent = link.dataset.originalText || link.textContent;
     }
 

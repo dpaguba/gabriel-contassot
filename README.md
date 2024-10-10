@@ -2,6 +2,10 @@
 
 This project is an attempt to recreate the stunning portfolio website of Gabriel Contassot (https://gabrielcontassot.com/). It showcases a modern, interactive design with smooth animations and a sleek dark theme.
 
+
+https://github.com/user-attachments/assets/cebfe7b5-6283-4d9b-a1e4-2bd3d68c586e
+
+
 ## 🌟 Features
 
 - 🖼️ Fullscreen image gallery with smooth transitions
